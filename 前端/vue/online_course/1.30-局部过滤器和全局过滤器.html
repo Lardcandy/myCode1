@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="price">
+        <h3>{{price | moneyForm}}</h3>
+        <h4>{{msg | reverseStr}}</h4>
+    </div>
+    <script type="text/javascript" src="vue_project/node_modules/vue/dist/vue.min.js"></script>
+    <script type="text/javascript">
+
+        //注册全局过滤器
+        Vue.filter('reverseStr',function (value) {
+            return value.split('').reverse().join('');
+        })
+
+        new Vue({
+            el:"#app",
+            template:``,
+            data(){
+                return{
+                    price:0,
+                    msg:'hello luffy'
+                }
+            },
+            //局部过滤器
+            filters:{
+                moneyForm:function (value) {
+                    return '$'+value;
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

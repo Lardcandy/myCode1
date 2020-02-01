@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .head{
+            width:100%;
+            height:40px;
+            background-color: #333333;
+        }
+        a{
+            text-decoration: none;
+            color:#b0b0b0;
+        }
+        li{
+            color:#b0b0b0;
+            display: inline-block;
+            list-style-type: none;
+            line-height: 40px;
+            font-size: 12px;
+        }
+        .sep{
+            color:#424242;
+            width: 5px;
+        }
+        .head_left{
+            position:absolute;
+            left:150px;
+        }
+        .head_right{
+            position: absolute;
+            right:150px;
+        }
+        .cart{
+            display: inline-block;
+            width:120px;
+            height: 39px;
+            background-color: #424242;
+            border: 0px;
+        }
+        #cart_img{
+            display: inline-block;
+            width:20px;
+        }
+        #shopping_cart{
+            display: inline-block;
+            font-size: 12px;
+            color:#b0b0b0;
+        }
+        .second_head{
+            position: relative;
+            margin:0 150px;
+            height: 100px;
+        }
+        .second_head li a{
+            color:#333;
+            font-size: 15px;
+            margin: 0 15px 0 0;
+        }
+        #mi_logo{
+            width: 55px;
+            height: 55px;
+            vertical-align: middle;
+        }
+        .second_head ul{
+            display: inline-block;
+            margin:0 0 0 179px;
+        }
+        .second_head li{
+            line-height: 100px;
+        }
+        .search{
+            position: absolute;
+            right: 0;
+            top:22.5px;
+        }
+        #search_input{
+            position: absolute;
+            right: 50px;
+            width:243px;
+            height: 48px;
+            border:1px solid #e0e0e0;
+            vertical-align:middle;
+        }
+        #search_input::-webkit-input-placeholder{
+            display: inline-block;
+            color:#757575;
+            font-size: 12px;
+            text-align: right;
+            padding:0 10px;
+        }
+        #search_button{
+            width: 50px;
+            height: 50px;
+            border:1px solid #e0e0e0;
+            background: none;
+            vertical-align:middle;
+        }
+        #search_button:hover{
+            background:#FF6700;
+
+        }
+        #search_img{
+            vertical-align: middle;
+        }
+        .third_div{
+            margin:0 150px;
+            /*background:orange;*/
+            height:460px;
+            overflow: hidden;
+        }
+        .third_div img{
+            position: absolute;
+            left: 150px;
+            width: 1219.2px;
+            height: 460px;
+        }
+        .left_menu{
+            float: left;
+            width:234px;
+            height: 100%;
+            background:black;
+            opacity: 0.7;
+            padding:20px 0 0 0;
+        }
+        .menu_button{
+            position: relative;
+            display: inline;
+            border: none;
+            width:234px;
+            height: 42px;
+            background:none;
+            color: white;
+            text-align: left;
+        }
+        .menu_button:hover{
+            background: #FF6700;
+        }
+        .arrow{
+            display: inline-block;
+            position: absolute;
+            float: right;
+            right:20px;
+            vertical-align: middle;
+            font-weight: bolder;
+        }
+        .fourth_div{
+            margin:15px 150px;
+            width: 1240px;
+            height: 170px;
+            overflow: hidden;
+        }
+        .left_menu2{
+            float: left;
+            width:229px;
+            height: 100%;
+            background:black;
+            opacity: 0.7;
+            padding-top: 10px;
+        }
+        .left_menu2 div{
+            display: inline-block;
+            position: relative;
+            width:76px;
+            height: 82px;
+            margin:-5px -5px -5px 0;
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+        .left_menu2 img{
+            position: absolute;
+            top:15px;
+            left: 25px;
+            width:24px;
+            height: 24px;
+        }
+        .left_menu2 p{
+            margin: 45px 0 0 0;
+            text-align: center;
+        }
+        #three_box ul{
+            position: absolute;
+            left: 388px;
+            width: 986px;
+            height: 100%;
+        }
+        #three_box li{
+            margin-left: 8px;
+            width: 316px;
+            height: 170px;
+        }
+        .fifth_div{
+            margin:25px 150px 0 150px;
+        }
+        .fifth_1{
+            position: relative;
+            height: 57.6px;
+        }
+        .fifth_1 p{
+            position: absolute;
+            bottom: 15px;
+            font-weight: lighter;
+        }
+        .page_updown{
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+        }
+        .page_updown a{
+            margin-left: -6px;
+            border: 1px solid #e0e0e0;
+            font-weight: bolder;
+        }
+        #xiaomi_shangou{
+            font-size: 23px;
+        }
+        .fifth_2{
+            position: relative;
+            width:1240px;
+            height:380px;
+        }
+        .fifth_box{
+            float: left;
+            display: inline-block;
+            margin-right: 12px;
+            width: 234px;
+            height: 339px;
+            background:#fafafa;
+            border-top: 1px solid red;
+        }
+        .countdown{
+            float: left;
+            display: inline-block;
+            margin-right: 12px;
+            width: 234px;
+            height: 339px;
+            background:#fafafa;
+            border-top: 1px solid red;
+        }
+        .fifth_2 a{
+            width: 234px;
+            height: 339px;
+        }
+        #fifth_2_1{
+            position: absolute;
+            width: 234px;
+            height: 46.2px;
+            color:#ef3a3b;
+            font-size: 21px;
+            padding-top: 15px;
+            text-align: center;
+            top:50px;
+        }
+        #flash{
+            position: absolute;
+            left:100px;
+            top:120px;
+        }
+        #fifth_2_3{
+            position: absolute;
+            width:234px;
+            height: 22.4px;
+            text-align: center;
+            top:200px;
+        }
+        #time{
+            position: absolute;
+            bottom: 80px;
+            left: 30px;
+        }
+        .countdown_dig{
+            float: left;
+            width:46px;
+            height: 46px;
+            background: #605751;
+            font-size: 24px;
+            line-height: 42px;
+            color: #fff;
+            text-align: center;
+        }
+        .countdown_colon{
+            float: left;
+            width: 15px;
+            font-size: 28px;
+            color: #605751;
+        }
+        .long_ad{
+            margin:0 150px;
+            height: 120px;
+            background: lightpink;
+        }
+        .long_ad img{
+            width: 1219.2px;
+            height: 120px;
+        }
+        #fixed_menu{
+            position: fixed;
+            right: -6px;
+            bottom: 210px;
+            width: 90px;
+            height:328px;
+            background-color: #fff;
+        }
+        .bar{
+            position: relative;
+            border:1px solid #f5f5f5;
+            width: 82px;
+            height: 90px;
+        }
+        .bar img{
+            position: absolute;
+            left: 28px;
+            top:15px;
+            width: 30px;
+            height: 30px;
+        }
+        .bar p{
+            margin: 55px 0 0 0;
+            color: #757575;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .footer{
+            position: relative;
+            margin-top: 70px;
+            width: 100%;
+            padding:0 150px;
+        }
+        .container{
+            width:1219.2px;
+            height: 272px;
+            background: red;
+        }
+        .footer-service{
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="fixed_menu">
+    <div class="bar"><a href=""><img src="../images/phone.png" alt=""><p>手机APP</p></a></div>
+    <div class="bar"><a href=""><img src="../images/person.png" alt=""><p>个人中心</p></a></div>
+    <div class="bar"><a href=""><img src="../images/service.png" alt=""><p>联系客服</p></a></div>
+    <div class="bar"><a href=""><img src="../images/cart.png" alt=""><p>购物车</p></a></div>
+</div>
+<div class="head">
+    <div class="head_left">
+        <ul>
+            <li><a href="">小米商城</a></li>
+            <li class="sep">|</li>
+            <li><a href="">MIUI</a></li>
+            <li class="sep">|</li>
+            <li><a href="">IoT</a></li>
+            <li class="sep">|</li>
+            <li><a href="">云服务</a></li>
+            <li class="sep">|</li>
+            <li><a href="">金融</a></li>
+            <li class="sep">|</li>
+            <li><a href="">有品</a></li>
+            <li class="sep">|</li>
+            <li><a href="">小爱开放平台</a></li>
+            <li class="sep">|</li>
+            <li><a href="">政企服务</a></li>
+            <li class="sep">|</li>
+            <li><a href="">资质证照</a></li>
+            <li class="sep">|</li>
+            <li><a href="">协议规则</a></li>
+            <li class="sep">|</li>
+            <li><a href="">下载app</a></li>
+            <li class="sep">|</li>
+            <li><a href="">Select Region</a></li>
+        </ul>
+    </div>
+    <div class="head_right">
+        <ul>
+            <li><a href="">登录</a></li>
+            <li class="sep">|</li>
+            <li><a href="">注册</a></li>
+            <li class="sep">|</li>
+            <li><a href="">消息通知</a></li>
+            <i>&nbsp&nbsp&nbsp</i>
+            <button class="cart">
+                <!--<div class="cart">-->
+                <img id="cart_img" src="../images/shopping_cart.png" alt="shopping_cart">
+                <p id="shopping_cart">购物车(0)</p>
+                <!--</div>-->
+            </button>
+        </ul>
+    </div>
+</div>
+<div class="second_head">
+    <img src="../images/mi.png" alt="mi_logo" id="mi_logo">
+    <ul>
+        <li><a href="">小米手机</a></li>
+        <li><a href="">红米</a></li>
+        <li><a href="">电视</a></li>
+        <li><a href="">笔记本</a></li>
+        <li><a href="">家电</a></li>
+        <li><a href="">新品</a></li>
+        <li><a href="">路由器</a></li>
+        <li><a href="">智能硬件</a></li>
+        <li><a href="">服务</a></li>
+        <li><a href="">社区</a></li>
+    </ul>
+    <div class="search">
+        <input id="search_input" type="text" placeholder="小米8">
+        <button id="search_button"><img id="search_img" src="../images/search.png" alt="search" height="18px"></button>
+    </div>
+    </div>
+<div class="third_div">
+    <img src="../images/mi_bigPic.jpg" alt="">
+    <div class="left_menu">
+        <ul>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp手机 电话卡<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp电视 盒子<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp笔记本 平板<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp家电 插线板<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp出行 穿戴<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp智能 路由器<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp电源 配件<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp健康 儿童<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp耳机 音箱<div class="arrow">></div></button></li>
+            <li><button class="menu_button">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp生活 箱包<div class="arrow">></div></button></li>
+        </ul>
+    </div>
+</div>
+<div class="fourth_div">
+    <div class="left_menu2">
+        <div><a href=""><img src="../images/search.png" alt=""><p>选购手机</p></a></div>
+        <div><a href=""><img src="../images/search.png" alt=""><p>企业团购</p></a></div>
+        <div><a href=""><img src="../images/search.png" alt=""><p>F码通道</p></a></div>
+        <div><a href=""><img src="../images/search.png" alt=""><p>米粉卡</p></a></div>
+        <div><a href=""><img src="../images/search.png" alt=""><p>以旧换新</p></a></div>
+        <div><a href=""><img src="../images/search.png" alt=""><p>话费充值</p></a></div>
+    </div>
+    <div id="three_box">
+        <ul>
+            <li><a href=""><img src="../images/threebox.png" alt="" width="316px" height="170px"></a></li>
+            <li><a href=""><img src="../images/three_box2.jpg" alt="" width="316px" height="170px"></a></li>
+            <li><a href=""><img src="../images/threebox.png" alt="" width="316px" height="170px"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="fifth_div">
+    <div class="fifth_1">
+        <p id="xiaomi_shangou">小米闪购</p>
+        <div class="page_updown">
+            <a href="">&nbsp&nbsp<&nbsp&nbsp</a>
+            <a href="">&nbsp&nbsp>&nbsp&nbsp</a>
+        </div>
+    </div>
+    <div class="fifth_2">
+        <div class="countdown">
+            <div id="fifth_2_1">22:00&nbsp场</div>
+            <img id="flash" src="../images/flash.png" alt="">
+            <div id="fifth_2_3">距离结束还有</div>
+            <div id="time">
+                <div class="countdown_dig">00</div>
+                <div class="countdown_colon">：</div>
+                <div class="countdown_dig">00</div>
+                <div class="countdown_colon">：</div>
+                <div class="countdown_dig">00</div>
+            </div>
+        </div>
+        <div class="fifth_box"><a href=""><img src="../images/five_pic.png" alt="" width="234px" height="339px"></a></div>
+        <div class="fifth_box"><a href=""><img src="../images/five_pic.png" alt="" width="234px" height="339px"></a></div>
+        <div class="fifth_box"><a href=""><img src="../images/five_pic.png" alt="" width="234px" height="339px"></a></div>
+        <div class="fifth_box"><a href=""><img src="../images/five_pic.png" alt="" width="234px" height="339px"></a></div>
+    </div>
+</div>
+<div class="long_ad">
+    <a href=""><img src="../images/long_ad.jpg" alt=""></a>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="footer-service">
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

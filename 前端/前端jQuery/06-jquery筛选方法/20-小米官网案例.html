@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        *{padding:0;margin:0;}
+        ul{list-style: none}
+        .wrap{
+            width:980px;
+            height:612px;
+            margin:20px auto 0px;
+            background:#f4f3f4;
+            border:1px solid gray;
+        }
+        ul li{
+            float:left;
+            margin-left: 10px;
+            position:relative;
+            overflow: hidden;
+            width:233px;
+            height: 300px;
+        }
+        ul li p{
+            width:233px;
+            height:100px;
+            background:rgb(245,102,51);
+            position:absolute;
+            bottom: -100px;
+            text-align: center;
+            color:white;
+            line-height: 100px;
+            z-index:100;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        
+        <ul>
+            
+            <li><a href="#"><img src="images/幻灯片1.JPG"></a><p>百度一下，你就知道</p></li>
+            <li><a href="#"><img src="images/幻灯片2.JPG"></a><p>百度一下，你就知道</p></li>
+            <li><a href="#"><img src="images/幻灯片3.JPG"></a><p>百度一下，你就知道</p></li>
+            <li><a href="#"><img src="images/幻灯片4.JPG"></a><p>百度一下，你就知道</p></li>
+            <li><a href="#"><img src="images/幻灯片5.JPG"></a><p>百度一下，你就知道</p></li>
+            <li><a href="#"><img src="images/幻灯片6.JPG"></a><p>百度一下，你就知道</p></li>
+            <li><a href="#"><img src="images/幻灯片7.JPG"></a><p>百度一下，你就知道</p></li>
+            <li><a href="#"><img src="images/幻灯片8.JPG"></a><p>百度一下，你就知道</p></li>
+
+        </ul>
+        
+    </div>
+</body>
+<script src="../03-jquery属性操作/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    //mouseenter进入  mouseleave离开
+    $('.wrap li').hover(function () {
+
+        $(this).children('p').stop().animate({bottom:0},100);
+
+    },function () {
+
+        $(this).children('p').stop().animate({bottom:-100},50);
+
+
+    })
+    
+</script>
+</html>

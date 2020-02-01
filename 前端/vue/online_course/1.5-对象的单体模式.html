@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        //字面量方式创建对象
+        var person = {
+            name:'angela',
+            age:26,
+            fav:function (arg) {
+                console.log('love volleyball');
+                console.log(this.age);
+                console.log(arguments);
+            }
+        };
+
+
+        //es6中的对象的单体模式
+        var person = {
+            name:'angela',
+            age:26,
+            fav() {
+                console.log(this); //object
+            }
+        };
+        person.fav();
+
+    </script>
+
+</body>
+</html>

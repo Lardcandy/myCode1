@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        ul li{
+            list-style: none;
+            margin:20px;
+        }
+        ul li.active{
+            background-color: #b2dba1;
+        }
+
+        <img src="images/2.jpg" height="340" width="510"/></style>
+</head>
+<body>
+    <div id="music">
+        <audio :src="currentSrc" controls="" autoplay=""></audio>
+        <ul>
+            <li v-for="(song,index) in songList" @click="clickHandler(index)"
+            :class="{active:currentIndex==index}">
+                <h3>{{song.id}}--{{song.name}}</h3>
+                <p>{{song.singer}}</p>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="vue_project/node_modules/vue/dist/vue.min.js"></script>
+    <script type="text/javascript">
+
+        var songList = [
+            {id:1,name:'哪里只得我共你',singer:'Dear Jane',songSrc:'songs/哪里只得我共你-Dear Jane.mp3'},
+            {id:2,name:'只知感觉失了踪',singer:'Dear Jane',songSrc:'songs/只知感觉失了踪-Dear Jane.mp3'},
+            {id:3,name:'经过一些秋与冬',singer:'Dear Jane',songSrc:'songs/经过一些秋与冬-Dear Jane.mp3'},
+        ]
+
+        new Vue({
+            el:"#music",
+            data(){
+                return{
+                    songList:songList,
+                    currentIndex:0,
+                }
+            },
+            computed:{
+                currentSrc:function () {
+                    return this.songList[this.currentIndex].songSrc;
+                }
+            },
+            methods:{
+                clickHandler(index){
+                    this.currentIndex = index;
+                    console.log('index'+index);
+                    console.log('currentIndex'+this.currentIndex);
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        li.active{
+            font-size:50px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="danger">1</li>
+        <li>2</li>
+        <li class="danger">3</li>
+        <li>4</li>
+        <a href="#" id="anchor">baidu</a>
+
+    </ul>
+</body>
+<script src="../03-jquery属性操作/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        console.log($('li'));
+        //=
+        console.log($('ul').children());
+        
+        //jquery的便利方法.each()
+        
+        $('li').each(function (index,ele) {
+            console.log(ele);
+            console.log(index);
+
+            var isDanger = $(this).hasClass('danger');
+
+            if(isDanger){
+                $(this).css('color','red');
+            }else{
+                // $(this).css('font-size','20px');
+            }
+        })
+
+        //父级
+        console.log($('li').parent());
+        //前一个
+        console.log($('li').last().prev());
+        console.log($('li').last().prevAll());
+
+        //siblings
+        console.log($('#anchor').siblings('li'));
+
+        $('li').hover(function () {
+            $(this).addClass('active').siblings('li').removeClass('active');
+        })
+
+    })
+
+</script>
+</html>

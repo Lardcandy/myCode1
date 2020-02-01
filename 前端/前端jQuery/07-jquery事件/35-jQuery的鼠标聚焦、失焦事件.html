@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        //一加载html就获取焦点
+        // $('input[type=text]').focus();
+
+        //两秒后失焦
+        // setTimeout(function () {
+        //     $('input[type=text]').blur();
+        // },2000)
+
+        //聚焦 失焦调用下面的事件
+        // $('input[type=text]').focus(function () {
+        //     console.log('获取焦点了');
+        // });
+        // $('input[type=text]').blur(function () {
+        //     console.log('失去焦点了');
+        // });
+        
+        $('input[type=text]').keyup(function (e) {
+            switch (e.keyCode) {
+                case 13:
+                    console.log('按下回车键了');
+                    console.log($(this).val());
+                    //以后这里是和后端进行交互
+                    break;
+                default:
+                    break;
+            }
+        })
+        
+    });
+
+</script>
+</body>
+</html>

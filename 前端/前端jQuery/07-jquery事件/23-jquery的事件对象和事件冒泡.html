@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        #box{
+            width:200px;
+            height:200px;
+            background:gray;
+        }
+        p{
+            width:100px;
+            height:100px;
+            background:red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+        <p class="p1"></p>
+
+        <a href="https://www.luffycity.com">luffy</a>
+
+    </div>
+</body>
+<script src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    //入口函数事件
+    $(function () {
+
+        //事件对象  事件属性
+        $('.p1').click(function (ev) {
+
+            //事件类型
+            console.log(ev.type);
+            console.log(ev.target);
+
+            console.log(ev.pageX);
+            console.log(ev.pageY);
+
+            alert('当前p标签事件触发了');
+            //常用的事件方法  1.阻止事件冒泡  2.阻止默认事件
+
+            //1.阻止事件冒泡
+            ev.stopPropagation();
+
+
+        })
+
+        $('#box').click(function () {
+
+            alert('#box盒子事件触发了');
+
+        })
+
+        $('a').click(function (ev) {
+
+            //阻止a标签的默认事件  就不会跳转到luffycity.com
+            // ev.preventDefault();
+            // ev.stopPropagation();  这两句等于return false;
+
+            alert('hhhhhh');
+
+            return false;
+        })
+
+
+
+    })
+
+</script>
+</html>

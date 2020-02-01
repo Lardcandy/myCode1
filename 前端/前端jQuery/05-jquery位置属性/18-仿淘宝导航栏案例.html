@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{padding:0;margin:0;}
+        div{width:100%}
+        div img{width:100%}
+
+        .nav{display:none;}
+
+    </style>
+</head>
+<body>
+
+    <div class="top">
+        <img src="../images/淘宝1.png" alt="">
+    </div>
+
+    <div class="nav">
+        <img src="../images/淘宝2.png" alt="">
+    </div>
+
+    <div class="taobao">
+        <img src="../images/埃菲尔铁塔.jpg" alt="">
+    </div>
+
+    <script src="../03-jquery属性操作/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var h = $('.top').height();
+
+            $(document).scroll(function () {
+                var scrollTop = $(document).scrollTop();
+
+                if(h<scrollTop){
+                    $('.nav').css({display:"block",position:'fixed',top:0})
+                }else{
+                    $('.nav').css({display:'none',position:'static',top:0})
+                }
+
+            })
+        })
+
+
+    </script>
+</body>
+</html>

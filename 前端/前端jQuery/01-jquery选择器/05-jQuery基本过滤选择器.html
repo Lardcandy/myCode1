@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本过滤选择器</title>
+</head>
+<body>
+    <ul>
+
+        <li>哈哈哈哈哈哈</li>
+        <li>嘻嘻嘻嘻嘻</li>
+        <li>哒哒哒达达</li>
+        <li>bangbangbangbang</li>
+
+    </ul>
+</body>
+<script src="../jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+        //获取第一个：first，获取最后一个：last
+
+        //索引为奇数
+        $('li:odd').css('color','red');
+
+        //索引为偶数
+        $('li:even').css('color','yellow');
+
+        //选中索引值为1的元素
+        $('li:eq(1)').css('font-size','100px');
+
+        //索引值大于1
+        $('li:gt(1)').css('font-size','50px');
+
+        //索引值小于1
+        $('li:lt(1)').css('font-size','20px');
+
+
+
+    })
+
+</script>
+</html>

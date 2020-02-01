@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        span.active{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+        <p>luffycity</p>
+
+    </div>
+    <button>获取</button>
+
+    <ul>
+
+        <li class="luffy">路飞学城</li>
+        <li class="luffy2">路飞学城</li>
+        <li class="luffy3">路飞学城</li>
+        <li class="luffy4">路飞学城</li>
+
+    </ul>
+
+    <span class="span1">
+
+        luffy!
+
+    </span>
+
+    <div id="box2">
+
+        哈哈
+        <p>我是一个段落</p>
+        <a href="">baidu</a>
+
+        <input type="text" value="heihei" name="">
+
+        <button id="btn">get</button>
+
+    </div>
+
+
+</body>
+<script src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+        $('button').click(function () {
+
+
+
+            //jquery的属性操作  html属性操作  attr()
+            //1.attr()如果有一个参数，表示获取值
+            $('#box p').text($('#box').attr('id'));
+
+        })
+
+        //2.attr()如果设置两个值  表示设置属性
+        $('#box').attr('class','foo');
+        //设置多个值，使用对象存储；如果设置多个类名，不能使用attr()
+        $('#box').attr({'class':'foo2',name:'luffy'});
+
+        //3.删除一个属性
+        // $('#box').removeAttr('class');
+
+        //删除多个属性
+        $('#box').removeAttr('class name');
+
+
+        //-------------------------------------------
+
+
+        //DOM属性操作
+        //1.获取的是第一个元素的class值
+        console.log($('li').prop('class'))
+
+        //2.设置值
+        $('li').first().prop({'name':'app','name2':"app2"});
+        console.log($('li').first());
+
+        //删除DOM对象的name属性
+        $('li').first().removeProp('name');
+        console.log($('li').prop('name'));
+
+        //3.添加类  删除类
+        //addClass()  removeClass()
+        $('span').addClass('span2 span3');
+
+        $('span').removeClass('span2');
+
+        var isBig = false;
+        $('span').click(function () {
+
+            if(isBig){
+                $(this).removeClass('active');
+                isBig = false;
+            }else{
+                $(this).addClass('active');
+                isBig = true;
+            }
+        })
+
+        //4.值属性的操作 text() html() val()
+
+        //仅仅是获取文本
+        console.log($('#box2').text());
+        //获取盒子里所有代码
+        console.log($('#box2').html());
+
+        //设置值
+        // $('#box2').text('<a>baidu</a>');
+        // $('#box2').html('<a href="">baidu</a>');
+
+        //获取值
+        console.log($('input').val());
+        //设置值
+        $('input').val('heihei&haha');
+
+
+        $('#btn').click(function () {
+            var val = $('input').val();
+
+            $('#box2').text(val);
+        })
+
+        $('input').change(function () {
+            console.log($(this).val())
+        })
+
+
+    })
+
+</script>
+</html>

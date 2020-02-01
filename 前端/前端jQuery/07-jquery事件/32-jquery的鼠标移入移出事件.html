@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .father{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .child{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p class="child"></p>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+
+        // //鼠标穿过父元素和子元素都会触发下面的事件
+        // $(function () {
+        //     $('.father').mouseover(function (event) {
+        //         console.log('移入了');
+        //     });
+        //     $('.father').mouseout(function (event) {
+        //         console.log('移出了');
+        //     });
+        // })
+
+        //鼠标只穿过父元素触发下面的事件
+        $(function () {
+            $('.father').mouseenter(function (event) {
+                console.log('移入了');
+            });
+            $('.father').mouseleave(function (event) {
+                console.log('移出了');
+            });
+        })
+
+        
+    </script>
+</body>
+</html>

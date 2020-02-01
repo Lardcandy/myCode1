@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<script src="https://unpkg.com/vue/dist/vue.js"></script>-->
+    <script src="../lib/vue.js"></script>
+
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <!--<script src="../lib/vue.js"></script>-->
+    <!--<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>-->
+</head>
+<body>
+    <div id="app">
+        <router-link to="/login">登录</router-link>
+        <router-link to="/register">注册</router-link>
+
+        <router-view></router-view>
+
+    </div>
+
+    <template id="login">
+        <h3>登录界面</h3>
+    </template>
+
+    <template id="register">
+        <h3>注册界面</h3>
+    </template>
+
+    <script>
+        var login = {
+            template:"#login"
+        }
+        var register = {
+            template:"#register"
+        }
+
+        Vue.component('login',login)
+        Vue.component('register',register)
+
+        var routerobj = new VueRouter({
+            routes:[
+                {path:'/',redirect:"/login"},
+                {path:'/login',component:login},
+                {path:'/register',component:register},
+            ]
+        })
+
+
+        var vm = new Vue({
+            el:"#app",
+            data:{},
+            methods:{},
+            watch:{
+                '$route.path':function (newval,oldval) {
+                    // console.log(newval+'--'+oldval)
+                if (newval === '/login'){
+                    console.log('welcome to login page')
+                }else if(newval === '/register'){
+                    console.log('welcome to register page')
+                }},
+            },
+            component:{
+                login,
+                register
+            },
+            router:routerobj,
+        })
+
+    </script>
+</body>
+</html>

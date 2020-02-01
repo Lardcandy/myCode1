@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="http://www.baidu.com/s">
+        <input type="text" name="wd">
+        <input type="submit" value="🔍">
+    </form>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+
+        
+        $(function () {
+            //输入框中文字被选中时调用
+            $('input[type=text]').select(function () {
+                console.log('内容被选中了');
+            });
+            //原生js的onsubmit事件
+            $('form').submit(function (e) {
+                //阻止form表单的默认行为，默认跳转到百度
+                e.preventDefault();
+                //后面学完用ajax技术自己去发请求 往百度发请求
+                console.log('form被submit了');
+            })
+        });
+
+
+
+    </script>
+</body>
+</html>

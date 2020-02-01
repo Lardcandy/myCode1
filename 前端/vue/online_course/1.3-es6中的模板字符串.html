@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <ul>
+
+    </ul>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        // //拼接字符串
+        // //es5的语法
+        // let name = 'alex';
+        // let age = 29;
+        //
+        // var desc = name + '是讲师，今年'+ age + '了，就这样。';
+        // console.log(desc);
+
+        // //es6模板字符串
+        // let name = 'alex';
+        // let age = 29;
+        //
+        // //``这个不是单引号，是tab键上面的反引号
+        // var desc = `${name}是讲师，今年${age}了，就这样hhh`;
+        // console.log(desc);
+
+
+        //应用到复杂的场景
+        var imgSrc = './curry.jpg';
+        $(function () {
+            $('ul').append(`<li>
+            <a href="javascript:void(0);">
+                <img src= ${imgSrc} alt="">
+            </a>
+        </li>`)
+        });
+
+
+    </script>
+
+</body>
+</html>

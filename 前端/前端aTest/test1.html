@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style type="text/css">
+        *{
+            padding:0px;
+            marging:0px;
+        }
+        .background{
+            width:100%;
+            height:600px;
+            top:70px;
+            bottom:30px;
+            left:0;
+
+        }
+        .login_div{
+            width: 400px;
+            height:500px;
+            margin: 120px auto;
+            position: relative;
+            box-shadow:lightgray 0 0 20px;
+            background-color: white;
+        }
+        h2{
+            position: absolute;
+            top:50px;
+            left:50px;
+        }
+        img{
+            background-color: darkgray;
+            width: 40px;
+            height:40px;
+            position: absolute;
+            left:50px;
+        }
+        input{
+            position: absolute;
+            left:92px;
+            width:250px;
+            height:40px;
+        }
+        button{
+            position: absolute;
+            top:350px;
+            width: 140px;
+            height:40px;
+            border: 0;
+            box-shadow: darkgray 0 0 5px;
+            background-color: white;
+
+        }
+        .account{
+            top:150px;
+        }
+        .pw{
+            top:220px;
+        }
+        .username{
+            top:150px;
+
+        }
+        .password{
+            top:220px;
+        }
+        .login{
+
+            left:50px;
+        }
+        .register{
+            left:210px;
+        }
+        .tips{
+            position: absolute;
+            top:150px;
+            left: 100px;
+            width:200px;
+            height:200px;
+            background-color: darkgray;
+            opacity: 0.7;
+            display:none;
+            border-radius: 15px;
+            box-shadow:lightgray 0 0 20px;
+            /*文字水平垂直居中*/
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="./img/road.jpg" alt="background" class="background">
+    <div class="login_div">
+        <h2>账户登录</h2>
+        <img src="./img/account.png" alt="account" class="account">
+        <input type="text" class="username" placeholder="USERNAME">
+        <img src="./img/pw.png" alt="pw" class="pw">
+        <input type="password" class="password" placeholder="PASSWORD">
+        <button class="login">登录</button>
+        <button class="register" onclick="location='./test2.html'">注册</button>
+
+        <div class="tips">Very Good!</div>
+    </div>
+
+
+
+</body>
+<script src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(".login").click(function () {
+        $('.tips').css('display','block');
+    })
+</script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ul>
+
+        <li id="brother">路飞学城1</li>
+        <li><a href="https://www.luffycity.com">路飞学城2</a></li>
+        <li class="li3">路飞学城3</li>
+        <li>路飞学城4</li>
+        <li>路飞学城5</li>
+
+
+    </ul>
+
+</body>
+<script src="../jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    //使用jQuery的时候 要有入口函数 回调函数
+    $(function () {
+
+        //基础选择器
+        //1.id选择器
+        console.log($('#brother'))
+
+        $('#brother').css('color','red');
+
+        //2.标签选择器
+        //设置一个值
+        // $('a').css('color','yellow')
+        //设置多个值  使用对象存储 key：value
+        $('a').css({'color':'yellow','font-size':'24px'});
+
+        //3.类选择器
+        $('.li3').css('background','green');
+
+        //4.通配符选择器* 不常使用
+        console.log($('*'));
+
+        //清空整个界面的DOM元素
+        $('*').html('');
+
+
+
+    })
+
+</script>
+</html>

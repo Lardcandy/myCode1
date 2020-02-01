@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div{
+            width:100%;
+            height: 100%;
+            margin:10px 0px 0px 0px;
+            display: none;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <button>展示</button>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+<script type="text/javascript">
+
+
+    /*
+    * 书写繁琐 代码量大
+    * 代码复杂
+    * 动画 开启定时器 小心定时器的清除 各种操作和处理事件 不好实现
+    * 浏览器的兼容
+    * */
+
+
+
+    window.onload = function () {
+        var oBtn = document.getElementsByTagName('button')[0];
+
+        var oDivs = document.getElementsByTagName('div');
+
+        oBtn.onclick = function () {
+            for(var i = 0;i < oDivs.length;i++){
+                oDivs[i].style.display = 'block';
+                oDivs[i].innerHTML = 'div展示了';
+            }
+        }
+    }
+
+</script>
+</html>

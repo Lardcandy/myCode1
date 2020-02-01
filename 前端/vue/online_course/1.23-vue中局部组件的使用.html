@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        .main{
+            width:100%;
+
+        }
+        .head{
+            width: 100%;
+            height:70px;
+            background-color: #1b6d85;
+            text-align: center;
+            line-height: 70px;
+        }
+        .wrap{
+            width: 100%;
+        }
+        .wrap .aside{
+            width: 30%;
+            height:1200px;
+            background-color:pink;
+            text-align: center;
+            float:left;
+        }
+        .wrap .content{
+            width: 70%;
+            height: 1200px;
+            background-color: #843534;
+            /*font-size: 30px;*/
+            float:left;
+        }
+        .default{
+            height:30px;
+            width:100px;
+            background-color: white;
+            border:none;
+        }
+        .success{
+            background-color: #5cb85c;
+        }
+        .danger{
+            background-color: #761c19;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app"></div>
+    <script type="text/javascript" src="vue_project/node_modules/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+
+        //先声子 挂子 再用子
+        //1. 声明入口组件
+        //入口组件包括：头部组件 侧栏组件 内容组件 脚部组件
+
+
+        //全局组件
+        Vue.component('Vbtn',{
+            template:`
+                <button class="default" :class="type">
+                    <slot></slot>
+                </button>`,
+            props:['type']
+        })
+
+        //头部组件
+        var Vheader = {
+          template:`<div class="head">我是头部
+                        <Vbtn>default</Vbtn>
+                        <Vbtn type="success">success</Vbtn>
+                        <Vbtn type="danger">danger</Vbtn>
+                    </div>`
+        };
+        //侧栏组件
+        var Vaside = {
+          template:`<div class="aside">我是侧边栏</div>`
+        };
+        //内容组件
+        var Vcontent = {
+            template:`
+                <div class="content">
+                    我是内容组件
+                    <ul>
+                        <li v-for="(item,index) in post">
+                            {{index}}--{{item.title}}--{{item.content}}
+                        </li>
+                    </ul>
+                    <button @click="changeFontSize">changeFontSize</button>
+                </div>
+
+            `,
+            props:['post'],
+            methods:{
+                changeFontSize(){
+                    //通过$emit（）方法来触发自定义事件
+                    //第一个参数是自定义的事件名字，第二个参数是传递的参数
+                    this.$emit('changeSize',1);
+                }
+            }
+        };
+        //局部组件
+        var Vmain = {
+            template:`
+                <div class="main">
+                    {{title}}
+                    <Vheader/>
+                    <div class="wrap" :style="{fontSize:fontSize+'px'}">
+                        <Vaside></Vaside>
+                        <Vcontent :post="post" @changeSize="changeSizeFun"/>
+                    </div>
+                </div>
+            `,
+            data(){
+                return{
+                    fontSize:18,
+                }
+            },
+            components: {
+                //等价于 Vheader:Vheader
+                Vheader,
+                Vaside,
+                Vcontent
+            },
+            props:['title','post'],
+            methods: {
+                changeSizeFun(value){
+                    this.fontSize += value;
+                }
+            }
+        };
+
+        new Vue({
+            el:'#app',
+            //3. 使用子组件
+            template:`
+                <Vmain :title="text" :post="posts"/>
+            `,
+            data:{
+                text:'我是一个标题',
+                posts:[
+                    {id:1,title:'组件中的传值',content:'通过Prop传递数据'},
+                    {id:2,title:'组件中的传值2',content:'通过Prop传递数据2'},
+                    {id:3,title:'组件中的传值3',content:'通过Prop传递数据3'},
+                ]
+            },
+            //2. 挂载子组件
+            components:{
+                Vmain:Vmain,
+
+            },
+        })
+
+    </script>
+</body>
+</html>

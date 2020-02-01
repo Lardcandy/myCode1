@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="app">
+        <!--模板语法 {{  }}}-->
+        <h3>{{msg}}</h3>
+        <h4>{{msg+'hello'}}</h4>
+        <h4>{{1==1 ? '真':'假'}}</h4>
+        <!--不能使用if-else语句-->
+    </div>
+
+
+    <!--1.先引包-->
+    <script type="text/javascript" src="./node_modules/vue/dist/vue.js"></script>
+
+    <script type="text/javascript">
+
+        //2.创建vue实例化对象
+        var app = new Vue({
+            el:'#app',  //当前实例化对象绑定的根元素
+            data:{
+                //数据属性
+                //数据驱动视图
+                msg:'hello vue',
+                a:20,
+            }
+
+        });
+
+        console.log(app);
+        console.log(app.a);
+        console.log(app.$el===document.getElementById('app'));
+
+
+
+        //在vue实例化对象之后，这对象中属性前面会有$，
+        // 主要是跟我们自己定义的属性区分
+
+    </script>
+
+
+
+</body>
+</html>

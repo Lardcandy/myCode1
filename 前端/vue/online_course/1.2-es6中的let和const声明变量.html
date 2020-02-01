@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        // //es5中声明变量使用var
+        // console.log(a);  //undefined
+        // //有var的时候会发生变量提升，将var a;提升到全局，相当于放在最开头
+        // var a=10;
+        // console.log(a);  //10
+
+
+        // //1.因为变量提升，导致var声明的变量属于全局作用域
+        // //2.var声明的变量存在覆盖现象
+        // console.log(a);  //undefined
+        // {
+        //     var a = 20;
+        //     var a = 30;
+        // }
+        // console.log(a);  //30
+
+
+        // var a = [];
+        // for(let i = 0;i < 20;i++){
+        //     a[i] =function () {
+        //         console.log(i);
+        //     }
+        // }
+        //
+        // a[5]();  //var:20   let:5
+        // //1.使用var定义变量i：打印出20是因为var把变量i提升到全局作用域，
+        // //                 循环结束胡，i=20
+        // //2.使用let定义变量i：打印出5是因为let定义的变量i属于局部作用域
+
+
+        // {
+        //     let a = 10;
+        //     let a = 20;
+        //     //Uncaught SyntaxError: Identifier 'a' has already been declared
+        //     //1.let定义的变量不存在覆盖现象
+        // }
+        // // console.log(a);
+        // //Uncaught ReferenceError: a is not defined
+        // //2.let定义的变量a属于局部作用域
+
+
+        //const声明的常量
+        //1.不可修改
+        //2.属于局部作用域
+        {
+            const pi = 3.1415;
+            pi = 20;
+            //Uncaught TypeError: Assignment to constant variable.
+        }
+        console.log(pi);
+        //Uncaught ReferenceError: pi is not defined
+
+
+
+    </script>
+</body>
+</html>

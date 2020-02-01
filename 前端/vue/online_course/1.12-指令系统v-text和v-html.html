@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .active{
+            height:100px;
+            width:100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <!--<h3>{{msg}}</h3>-->
+    </div>
+
+    <script type="text/javascript" src="./vue_project/node_modules/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+
+
+
+
+        //3. v-for
+
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'hello 指令系统',
+                msg2:'这是我的数据',
+                msg3:'<a href="#">这是我的数据</a>',
+                isShow:false,
+                menuList:[
+                    {id:1,name:'拔丝地瓜',price:35},
+                    {id:2,name:'碳烧猪颈肉',price:45},
+                    {id:3,name:'鱼头豆腐汤',price:35},
+                ],
+                object:{
+                    name:'alex',
+                    age:27,
+                    fav:'rap'
+                },
+                isGreen:true,
+                href:'https://www.baidu.com'
+            },
+            template:`
+            <div>
+            //指令系统：
+            //1. v-text和v-html
+                <h2 v-text="msg2"></h2>
+                <h2 v-html="msg3"></h2>
+            //2. v-if和v-isShow
+                <div class="box" v-if="isShow"></div>
+                <div class="box" v-show="isShow"></div>
+                <div v-if="Math.random() > 0.5">
+                    此值大于0.5
+                </div>
+                <div v-else>
+                此值小于0.5
+                </div>
+            //3. v-for
+                <div>
+                    <ul>
+                        <li v-for='(item,index) in menuList'>
+                            <h3>{{index}}--{{item.name}}</h3>
+                            <p>￥{{item.price}}</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li v-for="(value,key) in object">
+                            <h3>{{value}}:{{key}}</h3>
+                        </li>
+                    </ul>
+                </div>
+            //4. v-bind
+                <div v-bind:class="{active:isGreen}"></div>
+                <a v-bind:href="href">baidu</a>
+            </div>
+            `
+            //这是反引号
+
+            // template:`<h3>{{msg}}</h3>`
+            // //template优先级高于el，以致于用template就不会渲染出上面的div
+
+
+        })
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script type="text/javascript">-->
+        <!--window.onload = function () {-->
+            <!--//window.onload必须等到页面内包括图片的所有元素记载完成之后才执行-->
+            <!--//如果不写window.onload()代码的执行顺序：从上到下-->
+            <!--var oDiv = document.getElementById('box');-->
+            <!--console.log(oDiv)-->
+        <!--}-->
+    <!--</script>-->
+</head>
+<body>
+    <div id="box">
+
+
+    </div>
+</body>
+<!--引入jQuery-->
+<script src="../jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    //如果没有引入jQuery：$ is not defined
+    // console.log($)
+
+    //jquery是js的一个库文件，既然是库文件，那么就会抛出来一个构造函数或者对象
+
+
+    /*DOM文档加载的步骤
+    1.解析HTML结构
+    2.加载外部脚本和样式表文件
+    3.解析并执行脚本代码
+    4.DOM树构建完成
+    5.加载图片等外部文件
+    6.页面加载完毕
+    * */
+
+
+    //$(document).ready()是DOM结构绘制完毕后就执行，不必等到加载完毕
+    //书写jquery的方式  入口函数
+    $(document).ready(function () {
+        alert(111)
+    })
+
+    //等价上面
+    $(function () {
+        alert(222);
+    })
+
+</script>
+</html>

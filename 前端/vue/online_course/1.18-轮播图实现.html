@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        ul{
+            list-style:none;
+            overflow: hidden;
+        }
+        ul li{
+            float:left;
+            width:40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #1b6d85;
+            color:#f7ecb5;
+        }
+        ul li.active{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slider">
+        <img :src="imgSrc" alt="">
+        <ul>
+            <li v-for="(item,index) in imgArr" v-bind:class="{active:index==currentIndex}"
+            v-on:click="clickHandler(index)">
+                {{index+1}}
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="vue_project/node_modules/vue/dist/vue.js"></script>
+    <script type="text/javascript">
+        //数据驱动视图
+        var imgArr = [
+            {id:1,imgSrc:'images/1.jpg'},
+            {id:2,imgSrc:'images/2.jpg'},
+            {id:3,imgSrc:'images/3.jpg'},
+            {id:4,imgSrc:'images/4.jpg'},
+        ];
+
+        new Vue({
+            el:'#slider',
+            template:``,
+            data(){
+                return{
+                    imgArr:imgArr,
+                    imgSrc:'images/1.jpg',
+                    currentIndex:0,
+
+                }
+            },
+            methods:{
+                clickHandler(index){
+                    this.currentIndex = index;
+                    this.imgSrc = this.imgArr[index].imgSrc;
+                }
+            }
+        })
+
+    </script>
+
+</body>
+</html>

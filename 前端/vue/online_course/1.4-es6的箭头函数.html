@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+       // //普通函数
+       // function add(a,b) {
+       //     return a+b;
+       // };
+       // alert(add(1,3));
+       //
+       // //函数对象
+       // var add = function (a,b) {
+       //     return a+b;
+       // };
+       // alert(add(2,3));
+       //
+       //  //箭头函数
+       //  var add = (a,b) => {
+       //      return a+b;
+       //  };
+       //  alert(add(1,6));
+
+       //-----------------------------------------------
+
+        //普通函数
+        var person = {
+          name:'angela',
+          age:26,
+          fav:function (arg) {
+              console.log('love volleyball');
+              console.log(this.age);
+              //this指向当前的对象
+              console.log(arguments);
+              //Arguments ["哈哈哈", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+          }
+        };
+
+        person.fav('哈哈哈');
+
+        //箭头函数
+        var person = {
+            name:'angela',
+            age:26,
+            fav:(arg) => {
+                console.log(this);  //window
+                //用箭头函数，this的指向变了，指向定义person的父级对象window
+                console.log(arguments);
+                //Uncaught ReferenceError: arguments is not defined
+            }
+        };
+
+        person.fav('哈哈');
+
+
+
+
+    </script>
+
+</body>
+</html>

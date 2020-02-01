@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{padding:0;
+            margin: 0;}
+        ul{
+            list-style:none;
+        }
+        /*清楚浮动产生的问题*/
+        #box:after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #box{width:800px;border:1px solid black;margin:20px auto;background:blue;}
+        #leftBox{width:200px;float:left;}
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <ul id="leftbox">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+        </ul>
+        <div id="rightbox">
+            <div style="display:block">
+                <p>a1</p>
+                <ul>
+                    <li class="active">a1</li>
+                    <li>a2</li>
+                    <li>a3</li>
+                    <li>a4</li>
+                </ul>
+            </div>
+            <div>
+
+                <p>b1</p>
+                <ul>
+                    <li class="active">a1</li>
+                    <li>a2</li>
+                    <li>a3</li>
+                    <li>a4</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

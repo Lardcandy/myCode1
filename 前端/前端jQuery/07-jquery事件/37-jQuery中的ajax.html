@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="box"></div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+
+        //动态页面：在不重载整个页面的情况下，ajax通过后台加载数据，并在页面上进行显示
+
+        //数据驱动页面
+
+        //常用设计模式
+        //MVC
+        //Model View Controller
+        //数据   视图   控制器
+
+        // var name = 'alex';
+        //
+        // //方法就是控制器
+        // $('.box').text(name);
+
+
+        //最简单的ajax请求实现了（不过，还要有server.py才能运行）
+        $(function () {
+            $.ajax({
+                url:'http://localhost:8080/',
+                type:'get',
+                success:function (data) {
+                    console.log(data);
+                    //假设 data = '<h2>首页</h2>'
+                    $('body').html(data);
+                },
+                error:function (err) {
+                    console.log(err);
+                }
+            });
+        });
+
+
+
+    </script>
+
+</body>
+</html>

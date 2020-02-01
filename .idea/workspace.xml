@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9478c0c-ab06-4fa9-868e-304979278adb" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1261151108">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="15" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="10" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="5" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="29" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="JPG" value="1" />
+          <entry key="css" value="1" />
+          <entry key="html" value="153" />
+          <entry key="iml" value="1" />
+          <entry key="js" value="18" />
+          <entry key="json" value="1" />
+          <entry key="notes" value="1" />
+          <entry key="png" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="153" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="2" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="18" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="34" />
+          <entry key="html" value="41553" />
+          <entry key="js" value="1646" />
+          <entry key="json" value="90" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="36" />
+          <entry key="HTML" value="41551" />
+          <entry key="JSON" value="90" />
+          <entry key="JavaScript" value="1646" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="myProject" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/04.监视路由地址的改变.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="22" selection-start-line="22" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" selection-start-line="12" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/前端/前端jQuery/homework/todolist.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/homework/小米商城.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/31-jQuery的单双击事件.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/32-jquery的鼠标移入移出事件.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/33-小米的购物车.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/34-表单事件的select事件.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/35-jQuery的鼠标聚焦、失焦事件.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/36-事件委托.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/37-jQuery中的ajax.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/06-jquery筛选方法/38-和风天气api接口.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/01-css3的@media媒体查询.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/02-第一个bootstrap页面.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/04-列偏移.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/03-栅格系统.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/全局的css.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/06-全局的css样式二-表格.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/06-全局的css样式二.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/07-bootstrap组建.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code/07-bootstrap组件.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/08-bootstrap的插件.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/29-抽屉评论收起.html" />
+        <option value="$PROJECT_DIR$/前端/前端jQuery/homework/resume.html" />
+        <option value="$PROJECT_DIR$/前端/vue/demo1.2.html" />
+        <option value="$PROJECT_DIR$/前端/vue/demo2.1.html" />
+        <option value="$PROJECT_DIR$/前端/vue/2.1_生命周期钩子.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.2-es6中的let和const声明变量.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.3-es6中的模板字符串.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.4-es6的箭头函数.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.5-对象的单体模式.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.6-es6中类的使用.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/vue_project/index.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.12-指令系统v-text和v-html.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.16-vue的事件处理之v-if和v-on结合.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.16-vue的事件处理.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.18-轮播图实现.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.19-v-model的双向数据绑定.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.23-vue中局部组件的使用.html" />
+        <option value="$PROJECT_DIR$/前端/vue/online_course/1.34-计算属性案例之音乐播放器.html" />
+        <option value="$PROJECT_DIR$/前端/前端aTest/test4.html" />
+        <option value="$PROJECT_DIR$/前端/前端aTest/test4.js" />
+        <option value="$PROJECT_DIR$/前端/前端aTest/test5.html" />
+        <option value="$PROJECT_DIR$/前端/前端aTest/test5.js" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/02.v-cloak的学习.html" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/03.组件案例-评论列表.html" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/test.html" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/04.监视路由地址的改变.html" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study/package.json" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/main.js" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/css/index.css" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/index.html" />
+        <option value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study/webpack.config.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study-eps2/node_modules" />
+    <handled-path value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study/node_modules" />
+    <handled-path value="$PROJECT_DIR$/前端/vue/online_course/vue_project/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study-eps2/package.json" />
+      <path value="$PROJECT_DIR$/前端/vue/b站vue/webpack-study/package.json" />
+      <path value="$PROJECT_DIR$/前端/vue/online_course/vue_project/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1000" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="b站vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="b站vue" type="462c0819:PsiDirectoryNode" />
+              <item name="webpack-study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myProject" type="462c0819:PsiDirectoryNode" />
+              <item name="前端" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="b站vue" type="462c0819:PsiDirectoryNode" />
+              <item name="webpack-study" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="innerHtml&#9;null&#9;null&#10;insert&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Chan_File/ape/vue_project" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\vue" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\vue\lib" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\vue\online_course" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\前端jQuery\08-bootstrap_code" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\前端jQuery\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\vue" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\lib" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\vue\vue实战" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\前端aTest" />
+      <recent name="C:\Users\dell\WebstormProjects\myProject\前端\前端jQuery\06-jquery筛选方法" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.test5.js">
+    <configuration name="test4.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test4.js" working-dir="$PROJECT_DIR$/前端/前端aTest">
+      <method v="2" />
+    </configuration>
+    <configuration name="test5.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test5.js" working-dir="$PROJECT_DIR$/前端/前端aTest">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.test4.js" />
+      <item itemvalue="Node.js.test5.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test5.js" />
+        <item itemvalue="Node.js.test4.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9478c0c-ab06-4fa9-868e-304979278adb" name="Default Changelist" comment="" />
+      <created>1536145584638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536145584638</updated>
+      <workItem from="1536145586792" duration="24241000" />
+      <workItem from="1536738013711" duration="8725000" />
+      <workItem from="1537252582418" duration="17330000" />
+      <workItem from="1537597017376" duration="13976000" />
+      <workItem from="1538828216739" duration="735000" />
+      <workItem from="1542869643952" duration="10796000" />
+      <workItem from="1545020897842" duration="21148000" />
+      <workItem from="1545295968854" duration="2620000" />
+      <workItem from="1545906032276" duration="5578000" />
+      <workItem from="1547646334885" duration="3106000" />
+      <workItem from="1547709333293" duration="16137000" />
+      <workItem from="1548550570882" duration="9530000" />
+      <workItem from="1548734072602" duration="40613000" />
+      <workItem from="1549271872069" duration="5955000" />
+      <workItem from="1550830523963" duration="36761000" />
+      <workItem from="1551915385442" duration="3109000" />
+      <workItem from="1552573425710" duration="671000" />
+      <workItem from="1557152778555" duration="599000" />
+      <workItem from="1558583013038" duration="4457000" />
+      <workItem from="1558678021062" duration="2131000" />
+      <workItem from="1558681129892" duration="5355000" />
+      <workItem from="1560131334871" duration="19974000" />
+      <workItem from="1561205657903" duration="1084000" />
+      <workItem from="1568797932325" duration="6760000" />
+      <workItem from="1573176748107" duration="5528000" />
+      <workItem from="1574351994595" duration="5488000" />
+      <workItem from="1575038985682" duration="599000" />
+      <workItem from="1576050826318" duration="16406000" />
+      <workItem from="1576603569539" duration="615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="290027000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <layout>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" sideWeight="0.5007153" side_tool="true" weight="0.27651006" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49928468" visible="true" weight="0.09114927" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32914925" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" order="8" weight="0.32970452" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33938548" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/34-表单事件的select事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/35-jQuery的鼠标聚焦、失焦事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/36-事件委托.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/37-jQuery中的ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/06-jquery筛选方法/38-和风天气api接口.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/01-css3的@media媒体查询.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/bootstrap-3.3.7/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/02-第一个bootstrap页面.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/03-栅格系统.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/01-jquery选择器/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="6019" column="4" selection-start-line="6019" selection-start-column="4" selection-end-line="6019" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/04-列偏移.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="24" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/05-全局的css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/07-bootstrap组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="179" column="35" selection-start-line="179" selection-start-column="35" selection-end-line="179" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/08-bootstrap的插件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/07-jquery事件/29-抽屉评论收起.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/04-jquery文档操作/16-jQuery文档操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/03-jquery属性操作/14-jquery的属性操作.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/homework/resume.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/08-bootstrap_code（details in 官网）/06-全局的css样式二.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="67" selection-start-line="84" selection-start-column="67" selection-end-line="84" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端jQuery/homework/小米商城.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="486" column="12" selection-start-line="486" selection-start-column="12" selection-end-line="486" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/vue实战/2.1_生命周期钩子.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/vue实战/1.2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.3-es6中的模板字符串.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/vue_project/.idea/vue.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/vue_project/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.6-es6中类的使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.12-指令系统v-text和v-html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.16-vue的事件处理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="57" column="42" lean-forward="true" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.19-v-model的双向数据绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端aTest/test5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端aTest/test4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="29" selection-start-line="29" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/前端aTest/test3.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.18-轮播图实现.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.34-计算属性案例之音乐播放器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.23-vue中局部组件的使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.4-es6的箭头函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.2-es6中的let和const声明变量.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/vue实战/2.1_数据双向绑定.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="7" lean-forward="true" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/online_course/1.5-对象的单体模式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/lib/vue.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/02.v-cloak的学习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/03.组件案例-评论列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" selection-start-line="16" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/notes" />
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/dist/bundle.js" />
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/04.监视路由地址的改变.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端/vue/b站vue/webpack-study/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

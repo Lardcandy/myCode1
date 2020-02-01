@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        //es5
+        function Person(name,age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        //定义方法
+        Person.prototype.showName = function () {
+            alert(this.name);
+        };
+
+        var p = new Person('angela',18);
+        p.showName();
+
+
+
+        //es6 使用class创建类
+        class Person{
+            //类里面的函数之间不用符号分隔
+            //构造函数
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            showName(){
+                alert(this.name);
+            }
+        }
+
+        var p2 = new Person('angela',18);
+        p2.showName();
+
+    </script>
+
+</body>
+</html>

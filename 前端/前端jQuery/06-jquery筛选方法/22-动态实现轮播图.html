@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        *{padding:0;margin:0;}
+        ul{list-style:none;}
+        #box{
+            /*图片的宽高 240px 180px*/
+            width:600px;
+            height:302px;
+            position:relative;
+            margin:50px auto;
+            overflow: hidden;
+        }
+        ul{
+            width:2400px;
+            position: absolute;
+
+        }
+        ul li{
+            float: left;
+
+        }
+        p{
+            position: absolute;
+            left:80px;
+            bottom:30px;
+        }
+        p span{
+            color:white;
+            display: inline-block;
+            width:20px;
+            height:20px;
+            line-height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        p span.active{
+            color:black;
+            background:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+        <ul>
+            <!--显示轮播的图片-->
+        </ul>
+        <p>
+            <!--显示索引-->
+        </p>
+
+    </div>
+    <button id="play">轮播吧！</button>
+    <button id="stop">暂停吧！</button>
+
+</body>
+<script src="../03-jquery属性操作/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+        //1.获取本地的图片数据   以后在后面的课程中这些数据会从后端服务器中获取
+        var imgArr = ['../images/轮播图%20(1).JPG','../images/轮播图%20(2).JPG','../images/轮播图%20(3).JPG','../images/轮播图%20(4).JPG'];
+
+        //2.动态的生成图片
+        for(var i = 0; i< imgArr.length;i++){
+            $('ul').append('<li><img src=' +imgArr[i]+ '></li>');
+        }
+
+        //3.生成索引
+        var str = '';
+        $('li').each(function (i,ele) {
+            str += '<span>' +(i+1)+ '</span>';
+        })
+        $('p').html(str)
+        // console.log(str)
+
+        //4.默认设置索引的第一个active
+        $('span:first').addClass('active');
+
+        //5.点击索引
+        var index = 0;
+
+        $('span').click(function () {
+            $(this).addClass('active').siblings('span').removeClass('active');
+            //获取当前点击的索引
+            index = $(this).index();
+            // console.log(index);
+            // $('ul').css('left',-600*index);无动画
+            //有动画
+            $('ul').animate({
+                left:-600*index,
+            },1000)
+
+        })
+
+
+        var timer = null;
+        $('#play').click(function () {
+
+            //0.开启定时器  1.索引跟着走  2.图片跟着走
+
+            timer = setInterval(next,1000);
+
+            function next() {
+
+                if(index == $('li').length-1){
+                    //图片到最后一张了
+                    index = 0;
+                    $('p span').eq(index).addClass('active').siblings('span').removeClass('active');
+
+                    //修改ul的样式
+                    $('ul').css('left',0);
+
+
+                }else{
+                    index++;
+                    $('p span').eq(index).addClass('active').siblings('span').removeClass('active');
+
+                    //修改ul的样式
+                    $('ul').css('left',-600*index);
+
+
+                }
+            }
+        })
+
+        $('#stop').click(function () {
+            clearInterval(timer);
+        })
+
+    })
+
+</script>
+</html>

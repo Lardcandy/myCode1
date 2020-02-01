@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--<h4>{{ nameDesc }}</h4>-->
+        <input type="text" v-model="nameDesc2">
+        <h3>{{nameDesc2}}</h3>
+        <!--<button @click="changeName">修改</button>-->
+    </div>
+    <script type="text/javascript" src="vue_project/node_modules/vue/dist/vue.min.js"></script>
+    <script type="text/javascript">
+
+        new Vue({
+            el:"#app",
+            data(){
+                return{
+                    name:'alex',
+                    age:18,
+                }
+            },
+            methods:{
+                changeName(){
+                    this.name='John';
+                    this.age=39;
+                }
+            },
+            computed:{
+                nameDesc2:{
+                    set:function (newValue) {
+                        this.name = newValue;
+                    },
+                    get:function () {
+                        return this.name;
+                    }
+                },
+                nameDesc:function () {
+                    var str = `${this.name}已经${this.age}岁了，长大了！`;
+                    return str;
+                }
+            },
+            watch:{
+                //命令式
+                //检测单个属性
+                myName:function (value) {
+                    console.log(value);
+                    if(value=='alex'){
+                        console.log(value+' CEO');
+                        //一检测到input输入为alex，
+                        // 则在console.log打印出alex CEO
+                    }
+                }
+            }
+        })
+
+    </script>
+
+</body>
+</html>

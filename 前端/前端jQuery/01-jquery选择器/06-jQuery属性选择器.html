@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="box">
+
+        <h2 class="title">属性选择器</h2>
+
+        <ul>
+
+            <li id="li1">分手应该体面</li>
+            <li class="what" id="li2">分手应该体面</li>
+            <li class="what">分手应该体面</li>
+            <li class="heiehi">分手应该体面</li>
+
+        </ul>
+
+        <form action="" method="post">
+
+            <input name="username" type="text" value="1" checked="checked"></input>
+            <input name="username1111" type="text" value="1"></input>
+            <input name="username2222" type="text" value="1"></input>
+            <input name="username3333" type="text" value="1"></input>
+            <button class="btn-default">按钮1</button>
+            <button class="btn-info">按钮1</button>
+            <button class="btn-success">按钮1</button>
+            <button class="btn-danger">按钮1</button>
+
+        </form>
+
+
+
+    </div>
+</body>
+<script src="../jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+        //标签名[属性名] 查找所有含有id属性的该标签名的元素
+        $('li[id]').css('color','red');
+
+        //匹配给定的属性是what的元素
+        $('li[class=what]').css('font-size','30px');
+        //!= 不等于
+        $('li[class!=what]').css('font-size','50px');
+
+        //匹配给定的属性是以某些值开头的元素
+        $('input[name^=username]').css('background','gray');
+
+        //匹配给定的属性是以某些值结尾的元素
+        $('input[name$=222]').css('background','greenyellow');
+
+        //匹配给定的属性是以包含某些值的元素
+        $('button[class*=btn]').css('background','blue');
+
+
+
+    })
+
+</script>
+</html>

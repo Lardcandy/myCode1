@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin:0;
+        }
+        .shopCart{
+            position: relative;
+            width: 80px;
+            height: 40px;
+            background-color: red;
+            line-height: 40px;
+        }
+        .content{
+            position: absolute;
+            top: 40px;
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="shopCart">
+        <span>购物车</span>
+        <div class="content" style="display: none"></div>
+    </div>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+    //不要用mouseover mouseout，当从父元素移入子元素时会不停地调用下面的事件
+    // $(function () {
+    //     $('.shopCart').mouseover(function () {
+    //         $(this).children('.content').slideDown(500);
+    //     });
+    //     $('.shopCart').mouseout(function () {
+    //         $(this).children('.content').slideUp(500);
+    //     });
+    // })
+
+    //方案1：
+    // $(function () {
+    //     $('.shopCart').mouseenter(function () {
+    //         $(this).children('.content').stop().slideDown(500);
+    //     });
+    //     $('.shopCart').mouseleave(function () {
+    //         $(this).children('.content').stop().slideUp(500);
+    //     });
+    // });
+
+    //方案2：
+    //合成事件 hover = mouseenter + mouseleave
+    $(function () {
+        $('.shopCart').hover(function () {
+            $(this).children('.content').stop().slideDown(500);
+        },function () {
+            $(this).children('.content').stop().slideUp(500);
+        });
+    });
+
+
+</script>
+</body>
+</html>
