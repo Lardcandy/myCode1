@@ -9,15 +9,23 @@
 </head>
 <body>
     <div id="app">
+        <login></login>
     </div>
 
     <script>
+
+        var login = {
+            template:"<h3>this is login page</h3>"
+        }
 
     //创建Vue实例，得到ViewModel实例
     var vm = new Vue({
         el:"#app",
         data:{},
-        methods:{}
+        methods:{},
+        components:{
+            login,
+        }
     });
     </script>
 </body>
